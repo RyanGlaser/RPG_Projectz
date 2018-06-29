@@ -31,7 +31,7 @@ public class PlayerMotor : MonoBehaviour {
     {
         agent.stoppingDistance = newTarget.radius * .9f;    // stop player from standing on top of interactable when interactable isnt moving
         agent.updateRotation = false;                    
-        target = newTarget.transform;
+        target = newTarget.interactionTransform;
     }
 
     public void StopFollowingTarget ()
